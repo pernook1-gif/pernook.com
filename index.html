@@ -15,8 +15,8 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f8f8f8;
+    font-family:Arial,sans-serif;
+    background:#f7f7f7;
     color:#222;
 }
 
@@ -27,7 +27,7 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:30px 20px;
+    padding:40px 20px;
 }
 
 .logo{
@@ -39,18 +39,18 @@ body{
 
 h1{
     font-size:3rem;
+    letter-spacing:3px;
     margin-bottom:10px;
-    letter-spacing:2px;
 }
 
 .subtitle{
-    color:#666;
     font-size:1.2rem;
+    color:#666;
     margin-bottom:30px;
 }
 
 .description{
-    max-width:700px;
+    max-width:750px;
     line-height:1.8;
     font-size:1.05rem;
     color:#555;
@@ -58,22 +58,21 @@ h1{
 }
 
 .info{
-    margin-bottom:35px;
     line-height:2;
+    margin-bottom:35px;
     font-size:1rem;
 }
 
 .buttons{
     display:flex;
-    gap:15px;
-    flex-wrap:wrap;
     justify-content:center;
 }
 
 .btn{
-    text-decoration:none;
+    background:#E1306C;
     color:white;
-    padding:14px 28px;
+    text-decoration:none;
+    padding:14px 30px;
     border-radius:10px;
     font-weight:bold;
     transition:.3s;
@@ -83,31 +82,19 @@ h1{
     transform:translateY(-2px);
 }
 
-.whatsapp{
-    background:#25D366;
-}
-
-.instagram{
-    background:#E1306C;
-}
-
-.location{
-    background:#4285F4;
-}
-
 .services{
     background:white;
-    padding:60px 20px;
-    text-align:center;
+    padding:70px 20px;
 }
 
 .services h2{
+    text-align:center;
     margin-bottom:40px;
 }
 
 .service-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:20px;
     max-width:1000px;
     margin:auto;
@@ -117,17 +104,33 @@ h1{
     background:#f5f5f5;
     padding:25px;
     border-radius:15px;
+    text-align:center;
 }
 
 .card h3{
     margin-bottom:10px;
 }
 
+.google-section{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.google-link{
+    display:inline-block;
+    text-decoration:none;
+    background:#4285F4;
+    color:white;
+    padding:14px 30px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
 .footer{
     text-align:center;
     padding:30px;
     color:#777;
-    font-size:0.9rem;
+    border-top:1px solid #ddd;
 }
 
 @media(max-width:600px){
@@ -140,9 +143,10 @@ h1{
         font-size:1rem;
     }
 
-    .btn{
-        width:220px;
+    .description{
+        font-size:0.95rem;
     }
+
 }
 
 </style>
@@ -152,7 +156,7 @@ h1{
 
 <section class="hero">
 
-<img src="logo1.png" alt="Pernook Logo" class="logo">
+<img src="logo.png" alt="Pernook Logo" class="logo">
 
 <h1>PERNOOK</h1>
 
@@ -161,39 +165,21 @@ Coworking & Art Space
 </p>
 
 <div class="description">
-A creative environment designed for work, study,
-meetings, workshops, and community events.
-Pernook combines productivity with inspiration,
-offering a comfortable space for individuals,
-freelancers, students, and teams.
+A creative coworking and art space in Zahraa El Maadi designed for focused work, studying, workshops, events, and community gatherings. Pernook combines productivity, creativity, and comfort to provide an inspiring environment for students, freelancers, professionals, and creators.
 </div>
 
 <div class="info">
 📍 Zahraa El Maadi, Cairo<br>
 🕒 Daily 10:00 AM – 10:00 PM<br>
-🎨 Work • Study • Meetings • Workshops • Events
+📞 015 59984494
 </div>
 
 <div class="buttons">
-
-<a class="btn whatsapp"
-href="YOUR_WHATSAPP_LINK"
-target="_blank">
-WhatsApp
-</a>
-
-<a class="btn instagram"
+<a class="btn"
 href="https://instagram.com/pernook.1"
 target="_blank">
-Instagram
+Follow us on Instagram
 </a>
-
-<a class="btn location"
-href="YOUR_MAPS_LINK"
-target="_blank">
-Location
-</a>
-
 </div>
 
 </section>
@@ -205,31 +191,49 @@ Location
 <div class="service-grid">
 
 <div class="card">
-<h3>💻 Coworking</h3>
-<p>Comfortable shared workspace with high-speed internet.</p>
+<h3>💻 Coworking Space</h3>
+<p>Comfortable shared workspaces with a productive atmosphere.</p>
 </div>
 
 <div class="card">
-<h3>📚 Study Space</h3>
-<p>Quiet environment for students and focused work.</p>
+<h3>📚 Study Area</h3>
+<p>Quiet spaces designed for focus, learning, and creativity.</p>
 </div>
 
 <div class="card">
-<h3>🤝 Meeting Rooms</h3>
-<p>Private rooms for meetings, interviews and discussions.</p>
+<h3>🎨 Art Workshops</h3>
+<p>Creative activities, workshops, and artistic experiences.</p>
 </div>
 
 <div class="card">
-<h3>🎨 Workshops & Events</h3>
-<p>Creative workshops, community events and activities.</p>
+<h3>🎉 Events & Community</h3>
+<p>A welcoming place for gatherings, events, and networking.</p>
 </div>
 
 </div>
 
 </section>
 
+<section class="google-section">
+
+<h2>Visit Pernook</h2>
+
+<br>
+
+<a class="google-link"
+href="https://share.google/pxGNQNbOYNQ5v7XPC"
+target="_blank">
+View on Google
+</a>
+
+</section>
+
 <div class="footer">
-© 2026 Pernook Coworking & Art Space
+
+<strong>Pernook Coworking & Art Space</strong><br>
+Zahraa El Maadi, Cairo<br>
+015 59984494
+
 </div>
 
 </body>
